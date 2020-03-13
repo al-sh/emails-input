@@ -1,0 +1,65 @@
+.EmailsInput{
+    margin-top: 24px;
+    box-sizing: border-box;
+    height: 96px;    
+    padding: 8px 7px;
+    overflow-y: auto;
+    font-family: Open Sans;
+    background: #FFFFFF;
+    border: 1px solid #C3C2CF;    
+    border-radius: 4px;
+}
+
+.EmailsInput__Item{
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-right: 8px;
+    background: rgba(102, 153, 255, 0.2);
+    border-radius: 100px;
+    padding: 0 5px 0 5px;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.EmailsInput__Item-invalid{
+    border-radius: 0;
+    background: none;
+    border-bottom: 1px dashed #D92929;
+}
+
+.EmailsInput__ItemText{
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+.EmailsInput__ItemClose{
+    margin-left: 8px;
+    display: inline-block;
+    height: 8px; width: 8px;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI4IiB2aWV3Qm94PSIwIDAgOCA4IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNOCAwLjhMNy4yIDBMNCAzLjJMMC44IDBMMCAwLjhMMy4yIDRMMCA3LjJMMC44IDhMNCA0LjhMNy4yIDhMOCA3LjJMNC44IDRMOCAwLjhaIiBmaWxsPSIjMDUwMDM4Ii8+PC9zdmc+);
+    cursor: pointer;
+}
+
+.EmailsInput__AddMoreEmails{
+    white-space: nowrap;  
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    color: #C3C2CF;
+    cursor: pointer;
+}
+
+.EmailsInput__UserInput{
+    outline: none;
+    /* outline-offset: 0; */
+    border: none;
+}
+.EmailsInput__UserInput::-ms-clear {
+    display: none;
+}

@@ -1,0 +1,53 @@
+.EmailsEditor{
+    position: relative;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin: 30px auto;
+    width: 540px;
+    height: 300px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.EmailsEditor__TopBlock{
+    box-sizing: border-box;
+    height: 200px;
+    padding: 32px 50px;
+    background: #F8F8F7;
+    border-radius: 8px 8px 0px 0px;   
+}
+
+.EmailsEditor__Header{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 27px;
+    color: #050038;
+}
+
+.EmailsEditor__BoardName{
+    font-weight: 700;
+}
+
+.EmailsEditor__Toolbar{
+    position: absolute;
+    bottom: 0;
+    padding: 32px 50px;
+}
+
+.EmailsEditor__ToolbarButton{
+    display: inline-block;
+    box-sizing: border-box;
+    height: 40px;
+    padding: 8px 16px;
+    background: #4262FF;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.EmailsEditor__ToolbarButton:not(:nth-child(1)){
+    margin-left: 16px;
+}
