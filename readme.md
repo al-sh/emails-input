@@ -1,4 +1,6 @@
 # al-sh/emails-input
+Published on GitHub Pages: https://al-sh.github.io/emails-input/
+Tests page: https://al-sh.github.io/emails-input/index-test.html
 
 ## Usage
 var myEmailsInput = new EmailsInput(document.querySelector('#' + domNodeId));
@@ -34,3 +36,4 @@ em.onChange((event) => { alert(event.items); });
 parcel build index.html -d build
 
 ## Tests
+visit https://al-sh.github.io/emails-input/index-test.html to view tests
