@@ -33,7 +33,7 @@ em.onChange((event) => { console.log(event) });
 em.onChange((event) => { alert(event.items); });
 
 ## Build:
-parcel build index.html -d build
+npm run build
 
 ## Tests
 visit https://al-sh.github.io/emails-input/index-test.html to view tests

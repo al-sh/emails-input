@@ -4,12 +4,17 @@
   "description": "",
   "main": "emails-input.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/babel emails-input.js --out-file emails-input.min.js --presets=@babel/env --minified --no-comments && parcel build emails-input.css -d ./ -o emails-input.min.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "babel-preset-minify": "^0.5.1",
     "cssnano": "^4.1.10"
   }
 }
