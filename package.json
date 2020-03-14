@@ -5,7 +5,8 @@
   "main": "emails-input.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "./node_modules/.bin/babel emails-input.js --out-file emails-input.min.js --presets=@babel/env --minified --no-comments && parcel build emails-input.css -d ./ -o emails-input.min.css"
+    "build": "./node_modules/.bin/babel emails-input.js --out-file emails-input.min.js --presets=@babel/env --minified --no-comments && parcel build emails-input.css -d ./ -o emails-input.min.css",
+    "buildtest": "./node_modules/.bin/babel spec/emails-input.spec.js --out-file spec/emails-input.spec.min.js --presets=@babel/env --minified --no-comments"
   },
   "keywords": [],
   "author": "",
