@@ -28,7 +28,7 @@ function EmailsInput(inputContainerNode, options) {
 		}
 	}
 
-	this._emailsList = ['test@gmail.com', getRandomEmail(), getRandomEmail(), getRandomEmail()];
+	this._emailsList = [];
 
 	this._onChange = function () {
 		//default onchange
@@ -52,7 +52,6 @@ EmailsInput.prototype._addMoreEmailsAppend = function () {
 	el.className = this._BLOCKNAME + '__AddMoreEmails';
 	el.innerHTML = this._ADD_MORE_PEOPLE_TEXT;
 	el.onclick = () => { this.showUserInput(); }
-	//el.onclick = function () { this.showUserInput(); }.bind(this); //ie
 	inputArea.appendChild(el);
 	inputArea.scrollTop = inputArea.scrollHeight - inputArea.clientHeight; //autoscroll to bottom
 }
@@ -173,7 +172,7 @@ EmailsInput.prototype.showUserInput = function () {
 	const inputArea = this._getInputArea();
 
 	const userInput = document.createElement('input');
-	userInput.className = this._BLOCKNAME + "__UserInput"
+	userInput.className = this._BLOCKNAME + "__UserInput";
 	inputArea.appendChild(userInput);
 
 	userInput.onblur = this._onUserInputBlur.bind(this);
@@ -217,7 +216,6 @@ EmailsInput.prototype.showUserInput = function () {
 					this.addEmails(emails);
 				}
 				userInput.onblur = function () { };
-				//userInput.removeEventListener('blur', this._onUserInputBlur);
 				this._userInputRemove();
 			}
 		});

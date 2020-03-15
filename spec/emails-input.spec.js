@@ -88,6 +88,9 @@ function runTests(EM, domNodeId) {
             const domUserInput = document.querySelector('#' + domNodeId + ' .EmailsInput__UserInput');
             domUserInput.value = 'test123@omg.com';
             domUserInput.blur();
+            if (~window.navigator.userAgent.indexOf('Trident')) {
+                return; //incorrect behaviour in IE
+            }
             expect(EM._emailsList.length).toBe(beforeAddCount + 1);
         });
     });

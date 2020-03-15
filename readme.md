@@ -1,6 +1,9 @@
 # al-sh/emails-input
-Published on GitHub Pages: https://al-sh.github.io/emails-input/
-Tests page: https://al-sh.github.io/emails-input/index-test.html
+Published on GitHub Pages: https://al-sh.github.io/emails-input/ <br/>
+Tests page with examples: https://al-sh.github.io/emails-input/index-test.html <br/>
+Tests for build version: https://al-sh.github.io/emails-input/index-testmin.html <br/>
+if you want to watch examples and tests in IE11, visit Tests for build version.
+
 
 ## Usage
 var myEmailsInput = new EmailsInput(document.querySelector('#' + domNodeId));
@@ -36,4 +39,5 @@ em.onChange((event) => { alert(event.items); });
 npm run build
 
 ## Tests
-visit https://al-sh.github.io/emails-input/index-test.html to view tests
+visit https://al-sh.github.io/emails-input/index-test.html to view tests <br/>
+Tests for build version(for IE, specially): https://al-sh.github.io/emails-input/index-testmin.html 

@@ -32,7 +32,6 @@
     line-height: 24px;
 }
 
-
 .EmailsInput__ItemClose{
     margin-left: 8px;
     display: inline-block;
@@ -50,14 +49,12 @@
     font-weight: normal;
     font-size: 14px;
     line-height: 24px;
-    /* identical to box height, or 171% */
     color: #C3C2CF;
     cursor: pointer;
 }
 
 .EmailsInput__UserInput{
     outline: none;
-    /* outline-offset: 0; */
     border: none;
 }
 .EmailsInput__UserInput::-ms-clear {
