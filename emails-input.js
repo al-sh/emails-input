@@ -39,6 +39,12 @@ function EmailsInput(inputContainerNode, options) {
 	}
 
 	this._buildInputArea();
+	
+	this._getInputArea().onclick = (event) => {
+		if (event.target===this._getInputArea()) {
+			this.showUserInput();
+		}		
+	}
 }
 
 EmailsInput.prototype._validateEmail = function (email) {
