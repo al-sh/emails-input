@@ -18,11 +18,15 @@ default value: "add more people..."
 ## API
 
 ### Get and Set list of emails
-var myEmailsInput = new EmailsInput(document.querySelector('#' + domNodeId), { textAddMore: 'custom text from options...' } );
-var testList = ['test@gmail.com', 'test2@gmail.com'];
-myEmailsInput.setEmails(testList);
+```var myEmailsInput = new EmailsInput(document.querySelector('#' + domNodeId), { textAddMore: 'custom text from options...' } );
+
+var testList = ['test@gmail.com', 'test2@gmail.com']
+
+myEmailsInput.setEmails(testList);```
+
 ...
-var myEmails = myEmailsInput.getEmails();
+
+```var myEmails = myEmailsInput.getEmails();```
 
 ### Subscribe
 Use **onChange(function(event))** to subscribe changes
@@ -42,6 +46,7 @@ var em = new EmailsInput(document.querySelector('#firstEmailEditor'));
 em.onChange((event) => { console.log(event) });
 em.onChange((event) => { alert(event.items); });
 
+---
 ## Build:
 npm run build
 
