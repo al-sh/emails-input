@@ -1,17 +1,22 @@
+body{
+    padding: 10px;
+}
+
 .EmailsEditor{
     position: relative;
     background: #FFFFFF;
     box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     margin: 30px auto;
-    width: 540px;
-    height: 300px;
+    width: 100%;
+    max-width: 540px;
+    height: 100%;
     font-family: 'Open Sans', sans-serif;
 }
 
 .EmailsEditor__TopBlock{
     box-sizing: border-box;
-    height: 200px;
+    height: 80%;
     padding: 32px 50px;
     background: #F8F8F7;
     border-radius: 8px 8px 0px 0px;   
@@ -30,9 +35,8 @@
 }
 
 .EmailsEditor__Toolbar{
-    position: absolute;
-    bottom: 0;
-    padding: 32px 50px;
+    height: 20%;
+    padding: 32px 0 32px 50px;
 }
 
 .EmailsEditor__ToolbarButton{
