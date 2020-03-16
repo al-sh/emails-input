@@ -17,6 +17,13 @@ default value: "add more people..."
 
 ## API
 
+### Get and Set list of emails
+var myEmailsInput = new EmailsInput(document.querySelector('#' + domNodeId), { textAddMore: 'custom text from options...' } );
+var testList = ['test@gmail.com', 'test2@gmail.com'];
+myEmailsInput.setEmails(testList);
+...
+var myEmails = myEmailsInput.getEmails();
+
 ### Subscribe
 Use **onChange(function(event))** to subscribe changes
 ### #Details
