@@ -141,6 +141,7 @@ EmailsInput.prototype.addEmails = function (emails) {
 }
 
 EmailsInput.prototype.addOneEmail = function (email) {
+	email = email.replace(' ', '');
 	this._addMoreEmailsRemove();
 	this._renderNewEmail(email);
 	this._emailsList.push(email);
@@ -183,8 +184,8 @@ EmailsInput.prototype.showUserInput = function () {
 
 	userInput.onblur = this._onUserInputBlur.bind(this);
 
-	userInput.onkeyup = (event) => {
-		if (event.keyCode === 188) {//comma
+	userInput.onkeyup = (event) => {		
+		if ( (event.keyCode === 188) || (event.keyCode === 32) ) {//comma and space
 			if (userInput.value.replace(',', '') !== '') {
 				userInput.value = userInput.value.replace(',', '');
 				if (userInput.value !== '') {
