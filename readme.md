@@ -4,6 +4,8 @@ Tests page with examples: https://al-sh.github.io/emails-input/index-test.html <
 Tests for build version: https://al-sh.github.io/emails-input/index-testmin.html <br/>
 if you want to watch examples and tests in IE11, visit Tests for build version.
 
+## Install
+Add emails-input.min.js and emails-input.min.css to your page. 
 
 ## Usage
 var myEmailsInput = new EmailsInput(document.querySelector('#' + domNodeId));
