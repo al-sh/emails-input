@@ -1,4 +1,7 @@
 # al-sh/emails-input
+
+Pure Vanilla Javascript emails input! No frameworks, no dependecies, no typescript - only hardcore :)  
+
 Published on GitHub Pages: https://al-sh.github.io/emails-input/ <br/>
 Tests page with examples: https://al-sh.github.io/emails-input/index-test.html <br/>
 Tests for build version: https://al-sh.github.io/emails-input/index-testmin.html <br/>
